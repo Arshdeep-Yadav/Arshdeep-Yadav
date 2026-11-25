@@ -212,10 +212,9 @@ Thinking through model/runtime trade-offs, local inference, efficient workflows,
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&title_color=111111&text_color=111111&icon_color=111111&bg_color=FFFFFF" alt="GitHub stats" />
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true&title_color=111111&text_color=111111&bg_color=FFFFFF" alt="Top languages" />
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Arshdeep-Yadav&layout=compact&hide_border=true&title_color=111111&text_color=111111&bg_color=FFFFFF" alt="Top languages" />
 
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=FFFFFF&color=111111&line=111111&point=111111&area=true&hide_border=true" alt="GitHub activity graph" />
+<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=Arshdeep-Yadav&bg_color=FFFFFF&color=111111&line=111111&point=111111&area=true&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
