@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="186" viewBox="0 0 480 186" role="img" aria-label="Prompt OS">
+  <defs>
+    <radialGradient id="moon2-bg" cx="50%" cy="44%" r="78%">
+      <stop offset="0%" stop-color="#131e36"/>
+      <stop offset="34%" stop-color="#0b1220"/>
+      <stop offset="68%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </radialGradient>
+    <radialGradient id="moon2-neb0">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#a371f7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon2-neb1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon2-neb2">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon2-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.40"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="186" rx="16" fill="url(#moon2-bg)"/>
+  <ellipse cx="105" cy="52" rx="201" ry="111" fill="url(#moon2-neb0)"/>
+  <ellipse cx="384" cy="133" rx="192" ry="102" fill="url(#moon2-neb1)"/>
+  <ellipse cx="249" cy="182" rx="163" ry="59" fill="url(#moon2-neb2)"/>
+  <circle cx="276.5" cy="96.0" r="1.18" fill="#ffffff" fill-opacity="0.57"><animate attributeName="fill-opacity" values="0.57;0.95;0.57" dur="5.1s" repeatCount="indefinite"/></circle>
+  <circle cx="32.8" cy="80.6" r="1.61" fill="#ffffff" fill-opacity="0.49"/>
+  <circle cx="247.2" cy="102.3" r="0.91" fill="#ffffff" fill-opacity="0.64"/>
+  <circle cx="67.2" cy="116.8" r="1.01" fill="#ffffff" fill-opacity="0.27"/>
+  <circle cx="315.9" cy="155.8" r="0.76" fill="#ffffff" fill-opacity="0.39"/>
+  <circle cx="32.5" cy="102.9" r="1.61" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="218.3" cy="123.7" r="1.64" fill="#ffffff" fill-opacity="0.57"/>
+  <circle cx="295.3" cy="51.7" r="1.40" fill="#ffffff" fill-opacity="0.64"/>
+  <circle cx="127.5" cy="31.4" r="1.81" fill="#ffffff" fill-opacity="0.33"/>
+  <circle cx="60.0" cy="158.5" r="1.04" fill="#ffffff" fill-opacity="0.59"/>
+  <circle cx="134.3" cy="55.9" r="0.77" fill="#ffffff" fill-opacity="0.24"/>
+  <circle cx="210.8" cy="99.5" r="1.08" fill="#ffffff" fill-opacity="0.35"/>
+  <circle cx="99.1" cy="51.9" r="1.04" fill="#ffffff" fill-opacity="0.48"/>
+  <circle cx="227.6" cy="95.9" r="1.75" fill="#ffffff" fill-opacity="0.23"/>
+  <circle cx="49.0" cy="135.2" r="1.25" fill="#ffffff" fill-opacity="0.65"/>
+  <circle cx="224.9" cy="20.8" r="1.19" fill="#ffffff" fill-opacity="0.19"/>
+  <circle cx="143.5" cy="69.6" r="1.77" fill="#ffffff" fill-opacity="0.56"/>
+  <circle cx="191.9" cy="124.1" r="0.96" fill="#ffffff" fill-opacity="0.27"/>
+  <circle cx="278.6" cy="149.0" r="1.28" fill="#ffffff" fill-opacity="0.18"/>
+  <circle cx="85.3" cy="36.3" r="1.72" fill="#ffffff" fill-opacity="0.23"><animate attributeName="fill-opacity" values="0.23;0.68;0.23" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="297.6" cy="21.8" r="1.58" fill="#ffffff" fill-opacity="0.63"/>
+  <circle cx="21.1" cy="40.2" r="1.14" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="443.3" cy="102.2" r="1.81" fill="#ffffff" fill-opacity="0.55"/>
+  <circle cx="254.0" cy="113.4" r="1.21" fill="#ffffff" fill-opacity="0.38"/>
+  <circle cx="433.5" cy="157.6" r="1.53" fill="#ffffff" fill-opacity="0.58"/>
+  <circle cx="185.7" cy="93.0" r="1.48" fill="#ffffff" fill-opacity="0.18"/>
+  <circle cx="419.1" cy="165.9" r="1.75" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="331.3" cy="106.1" r="1.75" fill="#ffffff" fill-opacity="0.50"/>
+  <circle cx="127.2" cy="62.8" r="1.84" fill="#ffffff" fill-opacity="0.68"/>
+  <rect x="14" y="14" width="452" height="158" rx="12" fill="#080b12" fill-opacity="0.5" stroke="#30363d"/>
+  <text x="32" y="42" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="3" fill="#22d3ee">MOON 02</text>
+  <text x="32" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="-0.4" fill="#e6edf3">Prompt OS</text>
+  <text x="32" y="95" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.2" fill="#8b949e">Rust · LLM APIs · RAG · Evals</text>
+  <text x="32" y="120" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">An observable coding-agent harness: transparent execution</text>
+  <text x="32" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">traces of what the agent did and why, with iterative eval</text>
+  <text x="32" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">loops that measure and standardise output reliability.</text>
+  <text x="32" y="170" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="600" letter-spacing="0.3" fill="#22d3ee" fill-opacity="0.8">→ github.com/Arshdeep-Yadav/promptos</text>
+  <ellipse cx="392" cy="52" rx="38" ry="14" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-dasharray="2 5"/>
+  <circle cx="392" cy="52" r="18" fill="#22d3ee" fill-opacity="0.16" stroke="#22d3ee" stroke-opacity="0.7"/>
+  <circle cx="386" cy="46" r="6" fill="#ffffff" fill-opacity="0.10"/>
+  <circle cx="430" cy="52" r="3" fill="#22d3ee" fill-opacity="0.9"/>
+  <rect x="0.5" y="0.5" width="479" height="185" rx="15.5" fill="none" stroke="#30363d" stroke-opacity="0.9"/>
+</svg>

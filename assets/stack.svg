@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="558" viewBox="0 0 1000 558" role="img" aria-label="Technical toolkit">
+  <defs>
+    <radialGradient id="stack-bg" cx="50%" cy="44%" r="78%">
+      <stop offset="0%" stop-color="#131e36"/>
+      <stop offset="34%" stop-color="#0b1220"/>
+      <stop offset="68%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </radialGradient>
+    <radialGradient id="stack-neb0">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#a371f7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stack-neb1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stack-neb2">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stack-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.40"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="558" rx="18" fill="url(#stack-bg)"/>
+  <ellipse cx="220" cy="156" rx="420" ry="334" fill="url(#stack-neb0)"/>
+  <ellipse cx="800" cy="401" rx="400" ry="306" fill="url(#stack-neb1)"/>
+  <ellipse cx="520" cy="546" rx="340" ry="178" fill="url(#stack-neb2)"/>
+  <circle cx="351.3" cy="232.5" r="1.27" fill="#ffffff" fill-opacity="0.23"><animate attributeName="fill-opacity" values="0.23;0.68;0.23" dur="5.0s" repeatCount="indefinite"/></circle>
+  <circle cx="482.1" cy="256.1" r="1.43" fill="#ffffff" fill-opacity="0.67"/>
+  <circle cx="218.4" cy="366.1" r="0.89" fill="#ffffff" fill-opacity="0.45"/>
+  <circle cx="580.6" cy="215.2" r="0.95" fill="#ffffff" fill-opacity="0.40"/>
+  <circle cx="404.2" cy="508.7" r="0.92" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="276.7" cy="498.7" r="0.87" fill="#ffffff" fill-opacity="0.37"/>
+  <circle cx="218.7" cy="528.5" r="1.81" fill="#ffffff" fill-opacity="0.49"/>
+  <circle cx="541.3" cy="477.7" r="0.74" fill="#ffffff" fill-opacity="0.37"/>
+  <circle cx="307.0" cy="289.7" r="0.73" fill="#ffffff" fill-opacity="0.60"/>
+  <circle cx="834.2" cy="152.2" r="1.46" fill="#ffffff" fill-opacity="0.37"/>
+  <circle cx="961.1" cy="247.8" r="1.40" fill="#ffffff" fill-opacity="0.46"/>
+  <circle cx="184.9" cy="255.1" r="1.21" fill="#ffffff" fill-opacity="0.50"/>
+  <circle cx="248.2" cy="84.9" r="1.73" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="80.7" cy="463.5" r="1.18" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="695.1" cy="151.7" r="1.39" fill="#ffffff" fill-opacity="0.55"/>
+  <circle cx="486.7" cy="416.6" r="1.14" fill="#ffffff" fill-opacity="0.61"/>
+  <circle cx="427.0" cy="494.7" r="1.68" fill="#ffffff" fill-opacity="0.23"/>
+  <circle cx="564.6" cy="406.6" r="1.12" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="575.3" cy="79.6" r="1.52" fill="#ffffff" fill-opacity="0.65"/>
+  <circle cx="235.9" cy="178.3" r="1.69" fill="#ffffff" fill-opacity="0.30"/>
+  <circle cx="31.3" cy="385.6" r="0.73" fill="#ffffff" fill-opacity="0.27"/>
+  <circle cx="660.0" cy="533.0" r="1.55" fill="#ffffff" fill-opacity="0.63"/>
+  <circle cx="684.9" cy="322.7" r="0.71" fill="#ffffff" fill-opacity="0.61"/>
+  <circle cx="735.5" cy="431.6" r="1.26" fill="#ffffff" fill-opacity="0.66"><animate attributeName="fill-opacity" values="0.66;0.95;0.66" dur="8.0s" repeatCount="indefinite"/></circle>
+  <circle cx="386.2" cy="263.9" r="1.70" fill="#ffffff" fill-opacity="0.29"/>
+  <circle cx="49.1" cy="498.3" r="0.81" fill="#ffffff" fill-opacity="0.63"/>
+  <circle cx="452.7" cy="530.2" r="1.06" fill="#ffffff" fill-opacity="0.62"/>
+  <circle cx="510.8" cy="405.3" r="1.19" fill="#ffffff" fill-opacity="0.20"/>
+  <circle cx="263.9" cy="246.8" r="0.85" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="120.1" cy="230.3" r="0.89" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="146.3" cy="426.7" r="1.83" fill="#ffffff" fill-opacity="0.58"/>
+  <circle cx="706.2" cy="236.3" r="1.81" fill="#ffffff" fill-opacity="0.39"/>
+  <circle cx="437.3" cy="529.4" r="1.16" fill="#ffffff" fill-opacity="0.23"/>
+  <circle cx="575.3" cy="387.4" r="1.05" fill="#ffffff" fill-opacity="0.20"/>
+  <circle cx="50.3" cy="432.0" r="0.79" fill="#ffffff" fill-opacity="0.67"/>
+  <circle cx="967.8" cy="461.2" r="1.45" fill="#ffffff" fill-opacity="0.61"/>
+  <circle cx="221.4" cy="248.3" r="1.35" fill="#ffffff" fill-opacity="0.55"/>
+  <circle cx="346.8" cy="95.5" r="1.33" fill="#ffffff" fill-opacity="0.36"/>
+  <circle cx="905.7" cy="81.7" r="1.49" fill="#ffffff" fill-opacity="0.63"/>
+  <circle cx="614.5" cy="336.1" r="0.96" fill="#ffffff" fill-opacity="0.37"/>
+  <circle cx="427.5" cy="235.5" r="1.43" fill="#ffffff" fill-opacity="0.30"/>
+  <circle cx="194.9" cy="421.1" r="0.71" fill="#ffffff" fill-opacity="0.34"/>
+  <circle cx="311.1" cy="313.4" r="0.83" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="974.1" cy="241.8" r="0.97" fill="#ffffff" fill-opacity="0.29"/>
+  <circle cx="833.7" cy="343.3" r="0.68" fill="#ffffff" fill-opacity="0.31"/>
+  <circle cx="177.6" cy="129.3" r="1.26" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="796.0" cy="269.4" r="0.87" fill="#ffffff" fill-opacity="0.64"><animate attributeName="fill-opacity" values="0.64;0.95;0.64" dur="7.7s" repeatCount="indefinite"/></circle>
+  <circle cx="81.2" cy="222.0" r="1.47" fill="#ffffff" fill-opacity="0.45"/>
+  <circle cx="766.1" cy="540.0" r="1.02" fill="#ffffff" fill-opacity="0.68"/>
+  <circle cx="570.0" cy="268.7" r="0.95" fill="#ffffff" fill-opacity="0.45"/>
+  <circle cx="655.3" cy="506.6" r="1.23" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="193.9" cy="457.4" r="0.71" fill="#ffffff" fill-opacity="0.32"/>
+  <circle cx="464.4" cy="457.6" r="1.40" fill="#ffffff" fill-opacity="0.38"/>
+  <circle cx="301.2" cy="406.4" r="1.60" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="217.8" cy="172.9" r="1.28" fill="#ffffff" fill-opacity="0.41"/>
+  <circle cx="231.6" cy="462.5" r="1.20" fill="#ffffff" fill-opacity="0.60"/>
+  <circle cx="37.7" cy="277.7" r="1.70" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="53.1" cy="417.6" r="1.48" fill="#ffffff" fill-opacity="0.62"/>
+  <circle cx="411.6" cy="275.0" r="0.90" fill="#ffffff" fill-opacity="0.37"/>
+  <circle cx="287.4" cy="510.6" r="1.43" fill="#ffffff" fill-opacity="0.41"/>
+  <text x="34" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="10.5" font-weight="700" letter-spacing="3.4" fill="#8b949e">CONSTELLATION</text>
+  <text x="34" y="70" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#c9d1d9">What I can pick up on day one</text>
+  <rect x="34" y="96" width="296" height="328" rx="12" fill="#080b12" fill-opacity="0.45" stroke="#30363d"/>
+  <text x="52" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#58a6ff">PRODUCT &amp; STRATEGY</text>
+  <circle cx="56" cy="144" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Product roadmapping</text>
+  <circle cx="56" cy="170" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="174" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">MVP scoping</text>
+  <circle cx="56" cy="196" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Requirements translation</text>
+  <circle cx="56" cy="222" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Cross-functional collaboration</text>
+  <circle cx="56" cy="248" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="252" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Sprint planning</text>
+  <circle cx="56" cy="274" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="278" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Risk analysis</text>
+  <circle cx="56" cy="300" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="304" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Stakeholder reporting</text>
+  <circle cx="56" cy="326" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="330" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Agile / Kanban</text>
+  <circle cx="56" cy="352" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="356" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Jira</text>
+  <circle cx="56" cy="378" r="2.2" fill="#58a6ff" fill-opacity="0.85"/>
+  <text x="68" y="382" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Tableau</text>
+  <rect x="350" y="96" width="296" height="432" rx="12" fill="#080b12" fill-opacity="0.45" stroke="#30363d"/>
+  <text x="368" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#22d3ee">AI, ML &amp; AGENTS</text>
+  <circle cx="372" cy="144" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">LLMs &amp; LLM APIs</text>
+  <circle cx="372" cy="170" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="174" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">AI agents</text>
+  <circle cx="372" cy="196" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">MCP</text>
+  <circle cx="372" cy="222" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">RAG</text>
+  <circle cx="372" cy="248" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="252" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">LLM evals</text>
+  <circle cx="372" cy="274" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="278" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Harness engineering</text>
+  <circle cx="372" cy="300" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="304" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Prompt engineering</text>
+  <circle cx="372" cy="326" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="330" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">PyTorch</text>
+  <circle cx="372" cy="352" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="356" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">TensorFlow</text>
+  <circle cx="372" cy="378" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="382" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Scikit-learn</text>
+  <circle cx="372" cy="404" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Vision Transformers</text>
+  <circle cx="372" cy="430" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="434" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Grad-CAM / LIME</text>
+  <circle cx="372" cy="456" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Pandas</text>
+  <circle cx="372" cy="482" r="2.2" fill="#22d3ee" fill-opacity="0.85"/>
+  <text x="384" y="486" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">NumPy</text>
+  <rect x="666" y="96" width="296" height="432" rx="12" fill="#080b12" fill-opacity="0.45" stroke="#30363d"/>
+  <text x="684" y="122" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#a371f7">ENGINEERING &amp; CLOUD</text>
+  <circle cx="688" cy="144" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="148" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Python</text>
+  <circle cx="688" cy="170" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="174" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Rust</text>
+  <circle cx="688" cy="196" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">SQL</text>
+  <circle cx="688" cy="222" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Java</text>
+  <circle cx="688" cy="248" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="252" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">C / C++</text>
+  <circle cx="688" cy="274" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="278" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">JavaScript</text>
+  <circle cx="688" cy="300" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="304" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">REST APIs</text>
+  <circle cx="688" cy="326" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="330" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Flask</text>
+  <circle cx="688" cy="352" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="356" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Streamlit</text>
+  <circle cx="688" cy="378" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="382" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Docker</text>
+  <circle cx="688" cy="404" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="408" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Git / GitHub</text>
+  <circle cx="688" cy="430" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="434" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">AWS</text>
+  <circle cx="688" cy="456" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">Azure</text>
+  <circle cx="688" cy="482" r="2.2" fill="#a371f7" fill-opacity="0.85"/>
+  <text x="700" y="486" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="500" fill="#dbe4ee">GCP</text>
+  <rect x="0.5" y="0.5" width="999" height="557" rx="17.5" fill="none" stroke="#30363d" stroke-opacity="0.9"/>
+</svg>

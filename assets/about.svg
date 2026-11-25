@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="236" viewBox="0 0 1000 236" role="img" aria-label="About Arshdeep Yadav">
+  <defs>
+    <radialGradient id="about-bg" cx="50%" cy="44%" r="78%">
+      <stop offset="0%" stop-color="#131e36"/>
+      <stop offset="34%" stop-color="#0b1220"/>
+      <stop offset="68%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </radialGradient>
+    <radialGradient id="about-neb0">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#a371f7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="about-neb1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="about-neb2">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="about-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.40"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="236" rx="18" fill="url(#about-bg)"/>
+  <ellipse cx="220" cy="66" rx="420" ry="141" fill="url(#about-neb0)"/>
+  <ellipse cx="800" cy="169" rx="400" ry="129" fill="url(#about-neb1)"/>
+  <ellipse cx="520" cy="231" rx="340" ry="75" fill="url(#about-neb2)"/>
+  <circle cx="807.4" cy="143.7" r="1.09" fill="#ffffff" fill-opacity="0.40"><animate attributeName="fill-opacity" values="0.40;0.85;0.40" dur="5.2s" repeatCount="indefinite"/></circle>
+  <circle cx="937.2" cy="66.2" r="0.88" fill="#ffffff" fill-opacity="0.53"/>
+  <circle cx="788.2" cy="133.3" r="1.74" fill="#ffffff" fill-opacity="0.41"/>
+  <circle cx="925.8" cy="193.8" r="0.92" fill="#ffffff" fill-opacity="0.40"/>
+  <circle cx="102.3" cy="51.4" r="1.84" fill="#ffffff" fill-opacity="0.63"/>
+  <circle cx="844.4" cy="48.9" r="1.40" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="271.7" cy="33.9" r="1.59" fill="#ffffff" fill-opacity="0.19"/>
+  <circle cx="154.3" cy="141.6" r="1.14" fill="#ffffff" fill-opacity="0.47"/>
+  <circle cx="797.2" cy="178.4" r="1.79" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="54.1" cy="190.6" r="0.64" fill="#ffffff" fill-opacity="0.24"/>
+  <circle cx="900.0" cy="22.0" r="1.60" fill="#ffffff" fill-opacity="0.30"/>
+  <circle cx="83.7" cy="114.3" r="1.17" fill="#ffffff" fill-opacity="0.32"/>
+  <circle cx="179.4" cy="172.3" r="1.06" fill="#ffffff" fill-opacity="0.33"/>
+  <circle cx="969.7" cy="132.1" r="0.77" fill="#ffffff" fill-opacity="0.47"><animate attributeName="fill-opacity" values="0.47;0.92;0.47" dur="5.8s" repeatCount="indefinite"/></circle>
+  <circle cx="121.6" cy="159.7" r="0.74" fill="#ffffff" fill-opacity="0.26"/>
+  <circle cx="58.5" cy="214.9" r="1.63" fill="#ffffff" fill-opacity="0.50"/>
+  <circle cx="265.7" cy="25.3" r="0.98" fill="#ffffff" fill-opacity="0.50"/>
+  <circle cx="231.6" cy="172.3" r="1.74" fill="#ffffff" fill-opacity="0.32"/>
+  <circle cx="72.5" cy="69.6" r="0.64" fill="#ffffff" fill-opacity="0.36"/>
+  <circle cx="793.5" cy="203.2" r="1.13" fill="#ffffff" fill-opacity="0.62"/>
+  <circle cx="124.9" cy="163.2" r="0.91" fill="#ffffff" fill-opacity="0.31"/>
+  <circle cx="915.5" cy="213.1" r="1.29" fill="#ffffff" fill-opacity="0.45"/>
+  <circle cx="218.2" cy="40.2" r="0.72" fill="#ffffff" fill-opacity="0.65"/>
+  <circle cx="918.6" cy="69.6" r="0.96" fill="#ffffff" fill-opacity="0.60"/>
+  <circle cx="257.0" cy="77.5" r="1.22" fill="#ffffff" fill-opacity="0.56"/>
+  <rect x="26" y="24" width="948" height="188" rx="14" fill="#080b12" fill-opacity="0.55" stroke="#30363d"/>
+  <text x="54" y="62" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="10.5" font-weight="700" letter-spacing="3.4" fill="#8b949e">ABOUT</text>
+  <text x="54" y="104" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.6" fill="#e6edf3">From product scope to production trace.</text>
+  <text x="54" y="132" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">AI Product Builder and CS engineer (Honors in AI &amp; ML) doing a Hybrid MBA</text>
+  <text x="54" y="153" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">in Generative AI &amp; Product at IIT Patna. I work the whole span: scope the</text>
+  <text x="54" y="174" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">product, then build the harness, the memory and the evals that prove the</text>
+  <text x="54" y="195" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">thing actually works.</text>
+  <circle cx="668" cy="70" r="3" fill="#58a6ff"/>
+  <text x="684" y="74" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#8b949e">BASED IN</text>
+  <text x="684" y="91" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3">Bengaluru, India</text>
+  <circle cx="668" cy="114" r="3" fill="#a371f7"/>
+  <text x="684" y="118" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#8b949e">STUDYING</text>
+  <text x="684" y="135" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3">Hybrid MBA @ IIT Patna</text>
+  <circle cx="668" cy="158" r="3" fill="#3fb950"/>
+  <text x="684" y="162" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#8b949e">OPEN TO</text>
+  <text x="684" y="179" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3">AI Product · FDE · AI Engineering</text>
+  <rect x="0.5" y="0.5" width="999" height="235" rx="17.5" fill="none" stroke="#30363d" stroke-opacity="0.9"/>
+</svg>

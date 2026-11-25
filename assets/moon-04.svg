@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="186" viewBox="0 0 480 186" role="img" aria-label="Credit Risk Scoring">
+  <defs>
+    <radialGradient id="moon4-bg" cx="50%" cy="44%" r="78%">
+      <stop offset="0%" stop-color="#131e36"/>
+      <stop offset="34%" stop-color="#0b1220"/>
+      <stop offset="68%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </radialGradient>
+    <radialGradient id="moon4-neb0">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.26"/>
+      <stop offset="55%" stop-color="#a371f7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon4-neb1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#58a6ff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon4-neb2">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon4-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.40"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="186" rx="16" fill="url(#moon4-bg)"/>
+  <ellipse cx="105" cy="52" rx="201" ry="111" fill="url(#moon4-neb0)"/>
+  <ellipse cx="384" cy="133" rx="192" ry="102" fill="url(#moon4-neb1)"/>
+  <ellipse cx="249" cy="182" rx="163" ry="59" fill="url(#moon4-neb2)"/>
+  <circle cx="288.9" cy="102.1" r="1.19" fill="#ffffff" fill-opacity="0.43"><animate attributeName="fill-opacity" values="0.43;0.88;0.43" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="170.6" cy="144.4" r="0.67" fill="#ffffff" fill-opacity="0.61"/>
+  <circle cx="218.2" cy="108.3" r="1.41" fill="#ffffff" fill-opacity="0.57"/>
+  <circle cx="190.8" cy="107.9" r="1.35" fill="#ffffff" fill-opacity="0.29"/>
+  <circle cx="27.0" cy="136.7" r="0.79" fill="#ffffff" fill-opacity="0.34"/>
+  <circle cx="38.4" cy="39.7" r="0.86" fill="#ffffff" fill-opacity="0.54"/>
+  <circle cx="102.1" cy="150.3" r="0.76" fill="#ffffff" fill-opacity="0.34"/>
+  <circle cx="295.8" cy="71.3" r="1.84" fill="#ffffff" fill-opacity="0.58"/>
+  <circle cx="317.9" cy="163.9" r="1.30" fill="#ffffff" fill-opacity="0.66"/>
+  <circle cx="288.2" cy="91.3" r="0.95" fill="#ffffff" fill-opacity="0.33"/>
+  <circle cx="319.2" cy="105.3" r="1.68" fill="#ffffff" fill-opacity="0.21"/>
+  <circle cx="401.9" cy="125.2" r="0.92" fill="#ffffff" fill-opacity="0.29"/>
+  <circle cx="93.8" cy="53.2" r="1.49" fill="#ffffff" fill-opacity="0.68"/>
+  <circle cx="92.3" cy="150.5" r="0.80" fill="#ffffff" fill-opacity="0.43"/>
+  <circle cx="229.1" cy="137.3" r="0.90" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="182.9" cy="40.1" r="1.31" fill="#ffffff" fill-opacity="0.42"/>
+  <circle cx="87.2" cy="145.0" r="1.09" fill="#ffffff" fill-opacity="0.52"/>
+  <circle cx="347.8" cy="165.1" r="1.57" fill="#ffffff" fill-opacity="0.19"/>
+  <circle cx="275.2" cy="35.8" r="1.03" fill="#ffffff" fill-opacity="0.30"/>
+  <circle cx="179.4" cy="136.8" r="1.84" fill="#ffffff" fill-opacity="0.35"><animate attributeName="fill-opacity" values="0.35;0.80;0.35" dur="6.2s" repeatCount="indefinite"/></circle>
+  <circle cx="274.4" cy="150.4" r="1.11" fill="#ffffff" fill-opacity="0.56"/>
+  <circle cx="93.1" cy="35.4" r="1.33" fill="#ffffff" fill-opacity="0.27"/>
+  <circle cx="443.7" cy="128.6" r="1.59" fill="#ffffff" fill-opacity="0.57"/>
+  <circle cx="196.4" cy="102.9" r="1.57" fill="#ffffff" fill-opacity="0.49"/>
+  <circle cx="399.6" cy="131.4" r="0.69" fill="#ffffff" fill-opacity="0.36"/>
+  <circle cx="318.4" cy="114.6" r="0.85" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="20.4" cy="39.2" r="1.07" fill="#ffffff" fill-opacity="0.46"/>
+  <circle cx="393.3" cy="131.2" r="1.85" fill="#ffffff" fill-opacity="0.61"/>
+  <circle cx="138.2" cy="141.9" r="1.35" fill="#ffffff" fill-opacity="0.36"/>
+  <rect x="14" y="14" width="452" height="158" rx="12" fill="#080b12" fill-opacity="0.5" stroke="#30363d"/>
+  <text x="32" y="42" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="700" letter-spacing="3" fill="#3fb950">MOON 04</text>
+  <text x="32" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="-0.4" fill="#e6edf3">Credit Risk Scoring</text>
+  <text x="32" y="95" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.2" fill="#8b949e">Python · scikit-learn · MySQL · SQL</text>
+  <text x="32" y="120" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">Logistic regression on Lending Club loans, then the</text>
+  <text x="32" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">coefficients shipped into a MySQL stored procedure so scoring</text>
+  <text x="32" y="152" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#c9d1d9" fill-opacity="0.9">runs where the data already lives.</text>
+  <text x="32" y="170" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="600" letter-spacing="0.3" fill="#3fb950" fill-opacity="0.8">→ github.com/Arshdeep-Yadav/credit-risk-analysis</text>
+  <ellipse cx="392" cy="52" rx="38" ry="14" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-dasharray="2 5"/>
+  <circle cx="392" cy="52" r="18" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-opacity="0.7"/>
+  <circle cx="386" cy="46" r="6" fill="#ffffff" fill-opacity="0.10"/>
+  <circle cx="430" cy="52" r="3" fill="#3fb950" fill-opacity="0.9"/>
+  <rect x="0.5" y="0.5" width="479" height="185" rx="15.5" fill="none" stroke="#30363d" stroke-opacity="0.9"/>
+</svg>
