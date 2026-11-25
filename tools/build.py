@@ -368,9 +368,9 @@ def build_orbits():
         s += f'  <g transform="translate({x0:.2f} {y0:.2f})">{planet_body(uid, p, r)}</g>\n'
         anchor, dx, dy = TAGS[key]
         tx, ty = x0 + dx, y0 + dy
-        s += txt(tx, ty - 6, name.upper(), 8.5, 700, light, 1.5, anchor=anchor,
+        s += txt(tx, ty - 6, name.upper(), 9, 700, light, 1.5, anchor=anchor,
                  opacity=0.95, font=MONO, halo=True)
-        s += txt(tx, ty + 8, cap, 12, 600, TXT, 0, anchor=anchor, halo=True)
+        s += txt(tx, ty + 8, cap, 13.5, 600, TXT, 0, anchor=anchor, halo=True)
 
     # masthead
     s += txt(34, 44, "SOLAR SYSTEM", 11.5, 700, MUT, 3.4, font=MONO)
