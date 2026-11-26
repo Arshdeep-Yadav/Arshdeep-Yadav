@@ -516,7 +516,7 @@
   <circle cx="500" cy="296" r="32" fill="none" stroke="#ffe9a8" stroke-opacity="0.70" stroke-width="1.6"/>
   <text x="34" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11.5" font-weight="700" letter-spacing="3.4" fill="#8b949e">SOLAR SYSTEM</text>
   <text x="178" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11.5" font-weight="700" letter-spacing="3.4" fill="#4d5866">·  @ARSHDEEP-YADAV</text>
-  <text x="966" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="600" letter-spacing="1.8" fill="#5c6674" text-anchor="end">1 STAR  ·  8 PLANETS  ·  2 COMETS</text>
+  <text x="966" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9.5" font-weight="600" letter-spacing="1.8" fill="#5c6674" text-anchor="end">2 STARS  ·  8 PLANETS  ·  2 COMETS</text>
   <rect x="24" y="496" width="952" height="140" rx="16" fill="#060910" fill-opacity="0.62" stroke="#ffffff" stroke-opacity="0.055"/>
   <rect x="480" y="516" width="40" height="2" rx="1" fill="#f2c14e"><animate attributeName="fill-opacity" values="1;0.45;1" dur="5s" repeatCount="indefinite"/></rect>
   <text x="500" y="540" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="2.6" fill="#8b949e" text-anchor="middle">THE THESIS</text>

@@ -2,11 +2,12 @@
 
 Run:  python tools/build.py
 
-Writes README.md, preview.html and assets/*.svg. Everything is local and
-self-contained: no hosted service, no tracking, no paywall.
+Writes README.md, preview.html and assets/*.svg. The artwork is fully local;
+live counts come from GitHub's public API and fall back to cached values.
 """
 import os
 import re
+import json
 import math
 import base64
 import datetime
@@ -158,6 +159,40 @@ def get_avatar_b64():
     return b64
 
 
+def fetch_profile_stats():
+    """Live public counts for the masthead, cached so a failed call never zeroes it."""
+    user = "Arshdeep-Yadav"
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/vnd.github+json"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    cache = os.path.join(CACHE, "profile.json")
+
+    def get(url):
+        req = urllib.request.Request(url, headers=headers)
+        return json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+
+    try:
+        me = get(f"https://api.github.com/users/{user}")
+        repos = get(f"https://api.github.com/users/{user}/repos?per_page=100&type=owner")
+        stats = {
+            "followers": int(me.get("followers", 0)),
+            "repos": int(me.get("public_repos", 0)),
+            "stars": sum(int(r.get("stargazers_count", 0)) for r in repos),
+        }
+        with open(cache, "w", encoding="utf-8") as f:
+            json.dump(stats, f)
+        return stats
+    except Exception:
+        if os.path.exists(cache):
+            try:
+                with open(cache, encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+        return {"followers": 2, "repos": 13, "stars": 1}
+
+
 # --------------------------------------------------------------------------- #
 # 1. hero: the solar system
 # --------------------------------------------------------------------------- #
@@ -241,6 +276,8 @@ def build_orbits():
     W, H = 1000, 660
     uid = "solar"
     cx, cy = 500, 296
+    stats = fetch_profile_stats()
+    star_count = int(stats.get("stars", 0))
 
     s = '<?xml version="1.0" encoding="UTF-8"?>\n'
     s += (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
@@ -408,8 +445,8 @@ def build_orbits():
     # masthead
     s += txt(34, 44, "SOLAR SYSTEM", 11.5, 700, MUT, 3.4, font=MONO)
     s += txt(178, 44, "·  @ARSHDEEP-YADAV", 11.5, 700, "#4d5866", 3.4, font=MONO)
-    s += txt(966, 44, "1 STAR  ·  8 PLANETS  ·  2 COMETS", 9.5, 600, "#5c6674", 1.8,
-             anchor="end", font=MONO)
+    s += txt(966, 44, f"{star_count} {'STAR' if star_count == 1 else 'STARS'}  ·  8 PLANETS  ·  2 COMETS",
+             9.5, 600, "#5c6674", 1.8, anchor="end", font=MONO)
 
     # footer: the thesis, centred
     s += (f'  <rect x="24" y="496" width="{W - 48}" height="140" rx="16" fill="#060910" '
@@ -776,6 +813,14 @@ README = """<div align="center">
 <a href="https://github.com/Arshdeep-Yadav">GitHub</a> &nbsp;·&nbsp;
 <a href="tel:+918115237909">+91 81152 37909</a>
 </p>
+
+<p align="center">
+<a href="https://github.com/Arshdeep-Yadav?tab=followers"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FArshdeep-Yadav&amp;query=%24.followers&amp;label=FOLLOWERS&amp;color=58a6ff&amp;labelColor=0d1117&amp;style=for-the-badge" alt="Live follower count" /></a>
+<a href="https://github.com/Arshdeep-Yadav?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FArshdeep-Yadav&amp;query=%24.public_repos&amp;label=REPOS&amp;color=a371f7&amp;labelColor=0d1117&amp;style=for-the-badge" alt="Live public repository count" /></a>
+<a href="https://github.com/Arshdeep-Yadav/Cairn"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FArshdeep-Yadav%2FCairn&amp;query=%24.stargazers_count&amp;label=CAIRN%20STARS&amp;color=3fb950&amp;labelColor=0d1117&amp;style=for-the-badge" alt="Live Cairn star count" /></a>
+</p>
+
+<p align="center"><sub>Live counts from GitHub's public API · refreshed on page load</sub></p>
 
 <hr />
 
