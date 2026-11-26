@@ -175,19 +175,6 @@ PLANETS = [
 # orbits are viewed at an incline, so every ellipse is squashed by the same factor
 ORBIT_SQUASH = 0.475
 
-# where each tag sits: (text-anchor, dx, dy) measured from the planet centre
-TAGS = {
-    "merc": ("end", -17, 0),
-    "ven": ("start", 17, 0),
-    "ear": ("start", 17, 0),
-    "mar": ("end", -17, 0),
-    "jup": ("end", -17, 0),
-    "sat": ("start", 17, 0),
-    "ura": ("start", 17, 0),
-    "nep": ("middle", 0, 30),
-}
-
-
 def ellipse_path(rx, ry, deg):
     """Full ellipse path that starts at local (0, 0), for animateMotion."""
     a = math.radians(deg)
@@ -387,16 +374,6 @@ def build_orbits():
               f'repeatCount="indefinite"/>'
               f'<animate attributeName="stroke-width" values="2.4;0.3" dur="7.5s" begin="{b}" '
               f'repeatCount="indefinite"/></circle>\n')
-    s += f'  <circle cx="{cx}" cy="{cy}" r="41" fill="url(#{uid}-sunbody)"/>\n'
-    s += (f'  <circle cx="{cx}" cy="{cy}" r="41" fill="#fff3c4" fill-opacity="0">'
-          f'<animate attributeName="fill-opacity" values="0;0.16;0" dur="6s" '
-          f'repeatCount="indefinite"/></circle>\n')
-    s += (f'  <image x="{cx - 32}" y="{cy - 32}" width="64" height="64" '
-          f'clip-path="url(#{uid}-avatar)" xlink:href="{{AVATAR}}"/>\n')
-    s += f'  <circle cx="{cx}" cy="{cy}" r="32" fill="{GOLD}" fill-opacity="0.20"/>\n'
-    s += (f'  <circle cx="{cx}" cy="{cy}" r="32" fill="none" stroke="#ffe9a8" '
-          f'stroke-opacity="0.70" stroke-width="1.6"/>\n')
-
     # planets: static position on an outer group, motion on an inner one,
     # so renderers without SMIL still draw every planet in its lane
     for p in PLANETS:
@@ -407,20 +384,32 @@ def build_orbits():
         s += f'  <g transform="translate({x0:.2f} {y0:.2f})">\n    <g>\n'
         s += (f'      <animateMotion dur="{period}s" repeatCount="indefinite" '
               f'path="{ellipse_path(rx, ry, ang)}"/>\n')
+        # tag lives in the same motion group: name above, capability below,
+        # so it tracks the planet exactly and never drifts across the sun
+        nw, cw = len(name) * 7.0, len(cap) * 7.4
+        pw = max(nw, cw) + 22
+        ph = 2 * r + 42
+        s += (f'      <rect x="{-pw / 2:.1f}" y="{-(r + 22):.1f}" width="{pw:.1f}" '
+              f'height="{ph:.1f}" rx="9" fill="#04070e" fill-opacity="0.78" '
+              f'stroke="{light}" stroke-opacity="0.22" stroke-width="0.8"/>\n')
         s += '      ' + planet_body(uid, p, r) + '\n'
+        s += '      <g>\n'
+        s += txt(0, -(r + 8), name.upper(), 9, 700, light, 1.5, anchor="middle",
+                 opacity=0.95, font=MONO, halo=True)
+        s += txt(0, r + 15, cap, 13.5, 600, TXT, 0, anchor="middle", halo=True)
+        s += '      </g>\n'
         s += '    </g>\n  </g>\n'
 
-    # tags stay anchored on their own lane, so they never collide while the planets travel
-    for p in PLANETS:
-        key, name, cap, base, light, dark, rx, ang, r, period, moons, rings = p
-        ry = rx * ORBIT_SQUASH
-        a = math.radians(ang)
-        x0, y0 = cx + rx * math.cos(a), cy + ry * math.sin(a)
-        anchor, dx, dy = TAGS[key]
-        tx, ty = x0 + dx, y0 + dy
-        s += txt(tx, ty - 6, name.upper(), 9, 700, light, 1.5, anchor=anchor,
-                 opacity=0.95, font=MONO, halo=True)
-        s += txt(tx, ty + 8, cap, 13.5, 600, TXT, 0, anchor=anchor, halo=True)
+    # the photosphere is drawn last, so orbiting nameplates pass behind the face
+    s += f'  <circle cx="{cx}" cy="{cy}" r="41" fill="url(#{uid}-sunbody)"/>\n'
+    s += (f'  <circle cx="{cx}" cy="{cy}" r="41" fill="#fff3c4" fill-opacity="0">'
+          f'<animate attributeName="fill-opacity" values="0;0.16;0" dur="6s" '
+          f'repeatCount="indefinite"/></circle>\n')
+    s += (f'  <image x="{cx - 32}" y="{cy - 32}" width="64" height="64" '
+          f'clip-path="url(#{uid}-avatar)" xlink:href="{{AVATAR}}"/>\n')
+    s += f'  <circle cx="{cx}" cy="{cy}" r="32" fill="{GOLD}" fill-opacity="0.20"/>\n'
+    s += (f'  <circle cx="{cx}" cy="{cy}" r="32" fill="none" stroke="#ffe9a8" '
+          f'stroke-opacity="0.70" stroke-width="1.6"/>\n')
 
     # masthead
     s += txt(34, 44, "SOLAR SYSTEM", 11.5, 700, MUT, 3.4, font=MONO)
