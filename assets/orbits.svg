@@ -432,7 +432,6 @@
   <g transform="translate(391.82 282.23)">
     <g>
       <animateMotion dur="72s" repeatCount="indefinite" path="M 0 0 A 112.0 53.2 0 1 1 216.4 27.5 A 112.0 53.2 0 1 1 0 0"/>
-      <rect x="-66.5" y="-26.4" width="133.0" height="50.8" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#dcd2c7" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="8.14" fill="#958a7d" fill-opacity="0.16"/><circle r="4.40" fill="url(#solar-merc)"/><circle r="4.40" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/>
       <g>
   <text x="0" y="-12.4" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#dcd2c7" text-anchor="middle" fill-opacity="0.95">MERCURY</text>
@@ -443,7 +442,6 @@
   <g transform="translate(621.24 262.75)">
     <g>
       <animateMotion dur="96s" repeatCount="indefinite" path="M 0 0 A 140.0 66.5 0 1 1 -242.5 66.5 A 140.0 66.5 0 1 1 0 0"/>
-      <rect x="-66.5" y="-28.2" width="133.0" height="54.4" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#f7e5b6" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="11.47" fill="#d9b46b" fill-opacity="0.16"/><circle r="6.20" fill="url(#solar-ven)"/><circle r="6.20" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/>
       <g>
   <text x="0" y="-14.2" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#f7e5b6" text-anchor="middle" fill-opacity="0.95">VENUS</text>
@@ -454,7 +452,6 @@
   <g transform="translate(618.79 352.43)">
     <g>
       <animateMotion dur="120s" repeatCount="indefinite" path="M 0 0 A 168.0 79.8 0 1 1 -237.6 -112.9 A 168.0 79.8 0 1 1 0 0"/>
-      <rect x="-48.0" y="-28.4" width="96.0" height="54.8" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#8fd0ff" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="11.84" fill="#3f7fd0" fill-opacity="0.16"/><circle r="6.40" fill="url(#solar-ear)"/><circle r="6.40" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/><ellipse cx="-1.66" cy="-0.77" rx="2.56" ry="1.54" fill="#3fb950" fill-opacity="0.6" transform="rotate(-24 -1.66 -0.77)"/><ellipse cx="2.30" cy="1.92" rx="1.28" ry="0.83" fill="#3fb950" fill-opacity="0.5"/><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="27s" repeatCount="indefinite"/><circle cx="10.90" cy="3.97" r="1.09" fill="#dbe4ee" fill-opacity="0.9"/></g>
       <g>
   <text x="0" y="-14.4" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#8fd0ff" text-anchor="middle" fill-opacity="0.95">EARTH</text>
@@ -465,7 +462,6 @@
   <g transform="translate(349.86 355.84)">
     <g>
       <animateMotion dur="150s" repeatCount="indefinite" path="M 0 0 A 196.0 93.1 0 1 1 300.3 -119.7 A 196.0 93.1 0 1 1 0 0"/>
-      <rect x="-59.1" y="-27.0" width="118.2" height="52.0" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#ef8f63" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="9.25" fill="#c1552f" fill-opacity="0.16"/><circle r="5.00" fill="url(#solar-mar)"/><circle r="5.00" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="31s" repeatCount="indefinite"/><circle cx="9.58" cy="3.49" r="0.90" fill="#dbe4ee" fill-opacity="0.9"/><circle cx="-9.58" cy="-3.49" r="0.90" fill="#dbe4ee" fill-opacity="0.9"/></g>
       <g>
   <text x="0" y="-13.0" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#ef8f63" text-anchor="middle" fill-opacity="0.95">MARS</text>
@@ -476,7 +472,6 @@
   <g transform="translate(352.02 195.61)">
     <g>
       <animateMotion dur="190s" repeatCount="indefinite" path="M 0 0 A 258.0 122.5 0 1 1 296.0 200.8 A 258.0 122.5 0 1 1 0 0"/>
-      <rect x="-70.2" y="-34.6" width="140.4" height="67.2" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#f4d9b3" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="23.31" fill="#d8a76b" fill-opacity="0.16"/><circle r="12.60" fill="url(#solar-jup)"/><circle r="12.60" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/><rect x="-9.07" y="-6.68" width="18.14" height="2.27" rx="1.13" fill="#f4d9b3" fill-opacity="0.2"/><rect x="-11.09" y="-3.15" width="22.18" height="2.27" rx="1.13" fill="#7d562e" fill-opacity="0.16"/><rect x="-10.33" y="1.13" width="20.66" height="2.27" rx="1.13" fill="#f4d9b3" fill-opacity="0.18"/><rect x="-7.06" y="5.17" width="14.11" height="2.27" rx="1.13" fill="#7d562e" fill-opacity="0.14"/><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="37s" repeatCount="indefinite"/><circle cx="16.73" cy="6.09" r="2.14" fill="#dbe4ee" fill-opacity="0.9"/><circle cx="-6.09" cy="16.73" r="2.14" fill="#dbe4ee" fill-opacity="0.9"/><circle cx="-16.73" cy="-6.09" r="2.14" fill="#dbe4ee" fill-opacity="0.9"/><circle cx="6.09" cy="-16.73" r="2.14" fill="#dbe4ee" fill-opacity="0.9"/></g>
       <g>
   <text x="0" y="-20.6" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#f4d9b3" text-anchor="middle" fill-opacity="0.95">JUPITER</text>
@@ -487,7 +482,6 @@
   <g transform="translate(606.71 435.26)">
     <g>
       <animateMotion dur="230s" repeatCount="indefinite" path="M 0 0 A 312.0 148.2 0 1 1 -213.4 -278.5 A 312.0 148.2 0 1 1 0 0"/>
-      <rect x="-55.4" y="-32.4" width="110.8" height="62.8" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#f8eec8" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="19.24" fill="#e3c98d" fill-opacity="0.16"/><g clip-path="url(#solar-satback)"><g transform="rotate(-19)"><ellipse rx="21.63" ry="6.86" fill="none" stroke="#f8eec8" stroke-opacity="0.58" stroke-width="1.66"/><ellipse rx="25.58" ry="8.11" fill="none" stroke="#e3c98d" stroke-opacity="0.20" stroke-width="0.9"/></g></g><circle r="10.40" fill="url(#solar-sat)"/><circle r="10.40" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/><g clip-path="url(#solar-satfront)"><g transform="rotate(-19)"><ellipse rx="21.63" ry="6.86" fill="none" stroke="#f8eec8" stroke-opacity="0.58" stroke-width="1.66"/><ellipse rx="25.58" ry="8.11" fill="none" stroke="#e3c98d" stroke-opacity="0.20" stroke-width="0.9"/></g></g>
       <g>
   <text x="0" y="-18.4" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#f8eec8" text-anchor="middle" fill-opacity="0.95">SATURN</text>
@@ -498,7 +492,6 @@
   <g transform="translate(774.24 186.69)">
     <g>
       <animateMotion dur="270s" repeatCount="indefinite" path="M 0 0 A 358.0 170.0 0 1 1 -548.5 218.6 A 358.0 170.0 0 1 1 0 0"/>
-      <rect x="-59.1" y="-29.4" width="118.2" height="56.8" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#c8f6f7" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="13.69" fill="#7fd6da" fill-opacity="0.16"/><circle r="7.40" fill="url(#solar-ura)"/><circle r="7.40" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/>
       <g>
   <text x="0" y="-15.4" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#c8f6f7" text-anchor="middle" fill-opacity="0.95">URANUS</text>
@@ -509,7 +502,6 @@
   <g transform="translate(105.51 312.39)">
     <g>
       <animateMotion dur="310s" repeatCount="indefinite" path="M 0 0 A 396.0 188.1 0 1 1 789.0 -32.8 A 396.0 188.1 0 1 1 0 0"/>
-      <rect x="-77.6" y="-29.2" width="155.2" height="56.4" rx="9" fill="#04070e" fill-opacity="0.78" stroke="#8aa4f6" stroke-opacity="0.22" stroke-width="0.8"/>
       <circle r="13.32" fill="#3f63d0" fill-opacity="0.16"/><circle r="7.20" fill="url(#solar-nep)"/><circle r="7.20" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.6"/>
       <g>
   <text x="0" y="-15.2" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="9" font-weight="700" letter-spacing="1.5" paint-order="stroke" stroke="#05070e" stroke-width="3.2" stroke-opacity="0.9" stroke-linejoin="round" fill="#8aa4f6" text-anchor="middle" fill-opacity="0.95">NEPTUNE</text>

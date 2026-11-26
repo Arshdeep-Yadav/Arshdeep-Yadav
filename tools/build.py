@@ -386,12 +386,6 @@ def build_orbits():
               f'path="{ellipse_path(rx, ry, ang)}"/>\n')
         # tag lives in the same motion group: name above, capability below,
         # so it tracks the planet exactly and never drifts across the sun
-        nw, cw = len(name) * 7.0, len(cap) * 7.4
-        pw = max(nw, cw) + 22
-        ph = 2 * r + 42
-        s += (f'      <rect x="{-pw / 2:.1f}" y="{-(r + 22):.1f}" width="{pw:.1f}" '
-              f'height="{ph:.1f}" rx="9" fill="#04070e" fill-opacity="0.78" '
-              f'stroke="{light}" stroke-opacity="0.22" stroke-width="0.8"/>\n')
         s += '      ' + planet_body(uid, p, r) + '\n'
         s += '      <g>\n'
         s += txt(0, -(r + 8), name.upper(), 9, 700, light, 1.5, anchor="middle",
