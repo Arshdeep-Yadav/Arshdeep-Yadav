@@ -36,9 +36,7 @@
 <p align="center">
 <a href="mailto:arshdeep.yadav.work@gmail.com">Email</a> &nbsp;·&nbsp;
 <a href="https://arshdeep.works">Portfolio</a> &nbsp;·&nbsp;
-<a href="https://linkedin.com/in/arshdeep-yadav">LinkedIn</a> &nbsp;·&nbsp;
-<a href="https://github.com/Arshdeep-Yadav">GitHub</a> &nbsp;·&nbsp;
-<a href="tel:+918115237909">+91 81152 37909</a>
+<a href="https://linkedin.com/in/arshdeep-yadav">LinkedIn</a>
 </p>
 
 <p align="center">

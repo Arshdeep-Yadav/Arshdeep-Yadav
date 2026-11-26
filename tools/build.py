@@ -706,9 +706,13 @@ def _icon_globe(color):
             f'    <path d="M-8.2 0 H8.2" stroke="{color}" stroke-width="1.2" stroke-opacity="0.8"/>\n')
 
 
-def _icon_phone(color):
-    return (f'    <rect x="-5.4" y="-9" width="10.8" height="18" rx="2.8" fill="none" stroke="{color}" stroke-width="1.5"/>\n'
-            f'    <circle cx="0" cy="5.6" r="1.1" fill="{color}"/>\n')
+def _icon_linkedin(color):
+    return (f'    <rect x="-9" y="-9" width="18" height="18" rx="4.2" fill="none" stroke="{color}" stroke-width="1.4"/>\n'
+            f'    <circle cx="-3.9" cy="-3.7" r="1.15" fill="{color}"/>\n'
+            f'    <path d="M-3.9 -0.9 V5.2" stroke="{color}" stroke-width="2" stroke-linecap="round"/>\n'
+            f'    <path d="M0.5 5.2 V-0.9" stroke="{color}" stroke-width="2" stroke-linecap="round"/>\n'
+            f'    <path d="M0.5 1.5 C0.5 -1.7 4.7 -1.7 4.7 1.5 V5.2" fill="none" stroke="{color}" '
+            f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n')
 
 
 def build_contact():
@@ -747,7 +751,7 @@ def build_contact():
     channels = [
         ("EMAIL", "arshdeep.yadav.work@gmail.com", BLUE, _icon_mail),
         ("PORTFOLIO", "arshdeep.works", PURPLE, _icon_globe),
-        ("PHONE", "+91 81152 37909", GREEN, _icon_phone),
+        ("LINKEDIN", "linkedin.com/in/arshdeep-yadav", CYAN, _icon_linkedin),
     ]
     for i, (label, value, color, icon) in enumerate(channels):
         x, y = 30 + i * 320, 162
@@ -809,9 +813,7 @@ README = """<div align="center">
 <p align="center">
 <a href="mailto:arshdeep.yadav.work@gmail.com">Email</a> &nbsp;·&nbsp;
 <a href="https://arshdeep.works">Portfolio</a> &nbsp;·&nbsp;
-<a href="https://linkedin.com/in/arshdeep-yadav">LinkedIn</a> &nbsp;·&nbsp;
-<a href="https://github.com/Arshdeep-Yadav">GitHub</a> &nbsp;·&nbsp;
-<a href="tel:+918115237909">+91 81152 37909</a>
+<a href="https://linkedin.com/in/arshdeep-yadav">LinkedIn</a>
 </p>
 
 <p align="center">
