@@ -116,7 +116,7 @@ def space_fill(uid, w, h, rx=20):
             f'ry="{int(h * 0.32)}" fill="url(#{uid}-neb2)"/>\n')
 
 
-def stars(uid, w, h, count=150, seed=7, skip=None):
+def stars(uid, w, h, count=150, seed=7, skip=None, twinkle=23):
     """Deterministic starfield. skip = (cx, cy, r) region to leave empty."""
     rnd = prng(seed)
     out = []
@@ -127,7 +127,7 @@ def stars(uid, w, h, count=150, seed=7, skip=None):
             continue
         r = 0.6 + rnd() * 1.25
         op = 0.18 + rnd() * 0.5
-        if i % 23 == 0:
+        if i % twinkle == 0:
             out.append(
                 f'  <circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" fill="#ffffff" fill-opacity="{op:.2f}">'
                 f'<animate attributeName="fill-opacity" values="{op:.2f};{min(0.95, op + 0.45):.2f};{op:.2f}" '
@@ -163,14 +163,14 @@ def get_avatar_b64():
 # --------------------------------------------------------------------------- #
 # key, name, capability, base, light, dark, orbit rx, angle, radius, period, moons, rings
 PLANETS = [
-    ("merc", "Mercury", "AI Agents & MCP", "#958a7d", "#dcd2c7", "#3b352f", 112, 195, 4.4, 16, 0, False),
-    ("ven", "Venus", "LLM Evals & RAG", "#d9b46b", "#f7e5b6", "#7a5c2b", 140, 330, 6.2, 22, 0, False),
-    ("ear", "Earth", "AI Product", "#3f7fd0", "#8fd0ff", "#0f3159", 168, 45, 6.4, 30, 1, False),
-    ("mar", "Mars", "Rust & Python", "#c1552f", "#ef8f63", "#5d2510", 196, 140, 5.0, 38, 2, False),
-    ("jup", "Jupiter", "Data & Analytics", "#d8a76b", "#f4d9b3", "#7d562e", 258, 235, 12.6, 62, 4, False),
-    ("sat", "Saturn", "XAI Research", "#e3c98d", "#f8eec8", "#987a3b", 312, 70, 10.4, 84, 0, True),
-    ("ura", "Uranus", "Cloud & Infra", "#7fd6da", "#c8f6f7", "#2f7379", 358, 320, 7.4, 106, 0, False),
-    ("nep", "Neptune", "Prompt Engineering", "#3f63d0", "#8aa4f6", "#192a72", 396, 175, 7.2, 128, 0, False),
+    ("merc", "Mercury", "AI Agents & MCP", "#958a7d", "#dcd2c7", "#3b352f", 112, 195, 4.4, 72, 0, False),
+    ("ven", "Venus", "LLM Evals & RAG", "#d9b46b", "#f7e5b6", "#7a5c2b", 140, 330, 6.2, 96, 0, False),
+    ("ear", "Earth", "AI Product", "#3f7fd0", "#8fd0ff", "#0f3159", 168, 45, 6.4, 120, 1, False),
+    ("mar", "Mars", "Rust & Python", "#c1552f", "#ef8f63", "#5d2510", 196, 140, 5.0, 150, 2, False),
+    ("jup", "Jupiter", "Data & Analytics", "#d8a76b", "#f4d9b3", "#7d562e", 258, 235, 12.6, 190, 4, False),
+    ("sat", "Saturn", "XAI Research", "#e3c98d", "#f8eec8", "#987a3b", 312, 70, 10.4, 230, 0, True),
+    ("ura", "Uranus", "Cloud & Infra", "#7fd6da", "#c8f6f7", "#2f7379", 358, 320, 7.4, 270, 0, False),
+    ("nep", "Neptune", "Prompt Engineering", "#3f63d0", "#8aa4f6", "#192a72", 396, 175, 7.2, 310, 0, False),
 ]
 # orbits are viewed at an incline, so every ellipse is squashed by the same factor
 ORBIT_SQUASH = 0.475
@@ -186,6 +186,14 @@ TAGS = {
     "ura": ("start", 17, 0),
     "nep": ("middle", 0, 30),
 }
+
+
+def ellipse_path(rx, ry, deg):
+    """Full ellipse path that starts at local (0, 0), for animateMotion."""
+    a = math.radians(deg)
+    ox, oy = -rx * math.cos(a), -ry * math.sin(a)
+    return (f"M 0 0 A {rx:.1f} {ry:.1f} 0 1 1 {2 * ox:.1f} {2 * oy:.1f} "
+            f"A {rx:.1f} {ry:.1f} 0 1 1 0 0")
 
 
 def asteroid_belt(cx, cy, rx, ry, count=132, seed=5):
@@ -233,7 +241,7 @@ def planet_body(uid, p, r, detail=True):
     if moons:
         mr = r + 5.2
         out += (f'<g><animateTransform attributeName="transform" type="rotate" from="0" to="360" '
-                f'dur="{12 + period}s" repeatCount="indefinite"/>')
+                f'dur="{10 + period * 0.14:.0f}s" repeatCount="indefinite"/>')
         for m in range(moons):
             ma = math.radians(20 + m * 360 / moons)
             out += (f'<circle cx="{mr * math.cos(ma):.2f}" cy="{mr * math.sin(ma):.2f}" '
@@ -274,6 +282,14 @@ def build_orbits():
       <stop offset="52%" stop-color="{GOLD}"/>
       <stop offset="100%" stop-color="#a8720c"/>
     </radialGradient>
+    <linearGradient id="{uid}-ray" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="{GOLD}" stop-opacity="0.34"/>
+      <stop offset="45%" stop-color="{GOLD}" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="{GOLD}" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="{uid}-soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
     <linearGradient id="{uid}-comet-a" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="{GOLD}" stop-opacity="0.60"/>
       <stop offset="40%" stop-color="{GOLD}" stop-opacity="0.18"/>
@@ -300,7 +316,7 @@ def build_orbits():
     s += f'  <ellipse cx="160" cy="132" rx="300" ry="220" fill="url(#{uid}-neb0)"/>\n'
     s += f'  <ellipse cx="880" cy="574" rx="280" ry="200" fill="url(#{uid}-neb2)"/>\n'
     s += f'  <ellipse cx="{cx}" cy="{cy}" rx="310" ry="196" fill="url(#{uid}-sunglow)" opacity="0.26"/>\n'
-    s += stars(uid, W, H, 130, seed=11, skip=(cx, cy, 76))
+    s += stars(uid, W, H, 130, seed=11, skip=(cx, cy, 76), twinkle=9)
 
     # orbital lanes, faintly fading with distance
     for i, p in enumerate(PLANETS):
@@ -346,26 +362,60 @@ def build_orbits():
         s += '    </g>\n'
         s += '  </g>\n'
 
-    # the sun
+    # the sun: a breathing corona, a soft ray crown and a heartbeat pulse
+    s += f'  <ellipse cx="{cx}" cy="{cy}" rx="310" ry="196" fill="url(#{uid}-sunglow)">'
+    s += ('<animate attributeName="opacity" values="0.16;0.34;0.16" dur="9s" '
+          'repeatCount="indefinite"/>'
+          '<animate attributeName="rx" values="300;326;300" dur="9s" repeatCount="indefinite"/>'
+          '</ellipse>\n')
+    s += f'  <g transform="translate({cx} {cy})" filter="url(#{uid}-soft)">\n    <g>\n'
+    s += ('      <animateTransform attributeName="transform" type="rotate" from="0" to="360" '
+          'dur="150s" repeatCount="indefinite"/>\n')
+    for i in range(12):
+        ln, w = (46, 1.9) if i % 2 == 0 else (32, 1.3)
+        s += (f'      <path d="M {-w} -36 L 0 {-36 - ln} L {w} -36 Z" '
+              f'fill="url(#{uid}-ray)" transform="rotate({i * 30})"/>\n')
+    s += '    </g>\n  </g>\n'
     s += f'  <circle cx="{cx}" cy="{cy}" r="128" fill="url(#{uid}-sunglow)"/>\n'
-    s += (f'  <circle cx="{cx}" cy="{cy}" r="50" fill="none" stroke="{GOLD}" stroke-opacity="0.24">'
-          f'<animate attributeName="r" values="50;57;50" dur="7s" repeatCount="indefinite"/>'
-          f'<animate attributeName="stroke-opacity" values="0.24;0.07;0.24" dur="7s" '
-          f'repeatCount="indefinite"/></circle>\n')
+    # heartbeat: rings leaving the disc, half a cycle apart
+    for b in ("0s", "3.75s"):
+        s += (f'  <circle cx="{cx}" cy="{cy}" r="44" fill="none" stroke="{GOLD}" '
+              f'stroke-opacity="0" stroke-width="2.4">'
+              f'<animate attributeName="r" values="44;104" dur="7.5s" begin="{b}" '
+              f'repeatCount="indefinite"/>'
+              f'<animate attributeName="stroke-opacity" values="0.30;0" dur="7.5s" begin="{b}" '
+              f'repeatCount="indefinite"/>'
+              f'<animate attributeName="stroke-width" values="2.4;0.3" dur="7.5s" begin="{b}" '
+              f'repeatCount="indefinite"/></circle>\n')
     s += f'  <circle cx="{cx}" cy="{cy}" r="41" fill="url(#{uid}-sunbody)"/>\n'
+    s += (f'  <circle cx="{cx}" cy="{cy}" r="41" fill="#fff3c4" fill-opacity="0">'
+          f'<animate attributeName="fill-opacity" values="0;0.16;0" dur="6s" '
+          f'repeatCount="indefinite"/></circle>\n')
     s += (f'  <image x="{cx - 32}" y="{cy - 32}" width="64" height="64" '
           f'clip-path="url(#{uid}-avatar)" xlink:href="{{AVATAR}}"/>\n')
     s += f'  <circle cx="{cx}" cy="{cy}" r="32" fill="{GOLD}" fill-opacity="0.20"/>\n'
     s += (f'  <circle cx="{cx}" cy="{cy}" r="32" fill="none" stroke="#ffe9a8" '
           f'stroke-opacity="0.70" stroke-width="1.6"/>\n')
 
-    # planets, each with its capability tag set right beside it
+    # planets: static position on an outer group, motion on an inner one,
+    # so renderers without SMIL still draw every planet in its lane
     for p in PLANETS:
         key, name, cap, base, light, dark, rx, ang, r, period, moons, rings = p
         ry = rx * ORBIT_SQUASH
         a = math.radians(ang)
         x0, y0 = cx + rx * math.cos(a), cy + ry * math.sin(a)
-        s += f'  <g transform="translate({x0:.2f} {y0:.2f})">{planet_body(uid, p, r)}</g>\n'
+        s += f'  <g transform="translate({x0:.2f} {y0:.2f})">\n    <g>\n'
+        s += (f'      <animateMotion dur="{period}s" repeatCount="indefinite" '
+              f'path="{ellipse_path(rx, ry, ang)}"/>\n')
+        s += '      ' + planet_body(uid, p, r) + '\n'
+        s += '    </g>\n  </g>\n'
+
+    # tags stay anchored on their own lane, so they never collide while the planets travel
+    for p in PLANETS:
+        key, name, cap, base, light, dark, rx, ang, r, period, moons, rings = p
+        ry = rx * ORBIT_SQUASH
+        a = math.radians(ang)
+        x0, y0 = cx + rx * math.cos(a), cy + ry * math.sin(a)
         anchor, dx, dy = TAGS[key]
         tx, ty = x0 + dx, y0 + dy
         s += txt(tx, ty - 6, name.upper(), 9, 700, light, 1.5, anchor=anchor,
